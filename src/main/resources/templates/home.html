@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form th:action="@{/saveContact}" method="post">
+    <input name="name" placeholder="name">
+    <input name="email" placeholder="email">
+    <input name="phoneList" placeholder="phoneList">
+    <input type="submit">
+</form>
+
+<ul>
+    <li th:each="contact : ${contacts}">
+        <a th:href="@{'details-' + ${contact.id}}" th:text="'details of contact ' + ${contact.id}"></a>
+    </li>
+</ul>
+
+</body>
+</html>
