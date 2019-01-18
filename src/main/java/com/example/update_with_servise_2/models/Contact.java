@@ -26,6 +26,7 @@ public class Contact {
             mappedBy = "contact"
     )
     List<Phone> phoneList = new ArrayList<>();
+    String avatar;
 
     public Contact(String name, String email) {
         this.name = name;

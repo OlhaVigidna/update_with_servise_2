@@ -23,7 +23,7 @@ public class Phone {
     )
     Contact contact;
 
-    public Phone(String name) {
-        this.name = name;
-    }
+//    public Phone(String name) {
+//        this.name = name;
+//    }
 }
